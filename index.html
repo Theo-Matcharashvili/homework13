@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javascript</title>
+		<!--<script src="app.js"></script>
+			this is how we link js to html-->
+	</head>
+	<body>
+		<h2>aritmethic operators</h2>
+		<p>x = 1 + 2; x =  <span id="addition"> </span> </p>
+		<p>y = 3 - 1; y = <span id="subtraction">  </span></p>
+		<p>x * y = <span id="multiplication"></span></p>
+		<p>x / y = <span id="division"></span></p>
+		<p>x ** y = <span id="exponentiation"></span></p>
+		<h2>strings</h2>
+		<p>is this a string? <p id="stringY"> </p></p>
+		<p id="stringconc"></p>
+		<h2>booleans</h2>
+		<p>x is grater than y -<span id="boolean"></span></p>
+		<p>y is grater than x -<span id="boolean2"></span></p>
+		<p id="HW"></p>
+		<h2>calculete the areas using functions</h2>
+		<p>width= 7</p>
+		<p>height= 5</p>
+		<p>rectangle S= <span id="RS"></span></p>
+		<p>triangle S= <span id="TS"></span></p>
+		<p>circle S= <span id="CS"></span></p>
+
+		<script>
+		// document.getElementById("addition").innerHTML = 1 + 2;
+		// or we can write like this	
+		let x = 1 + 2;
+		let y = 3 - 1;
+		let str = "- yes, it is";
+		let a="hello";
+		let b=" world"
+		let text = `another way for  ${a}, ${b}!`;
+		function rectangleArea (c,d){
+			return c * d
+		}
+		function triangleArea(e, f) {
+			 return (Math.sqrt((e * e) + (f * f)));
+		}
+		function circleArea (radius) {
+			 return 2 * Math.PI * radius;
+		}
+		document.getElementById("addition").innerHTML = x;
+		document.getElementById("subtraction").innerHTML = y;
+		document.getElementById("multiplication").innerHTML = x * y;
+		document.getElementById("division").innerHTML = x / y;
+		document.getElementById("exponentiation").innerHTML = x ** y;
+		document.getElementById("stringY").innerHTML = str;
+		document.getElementById("boolean").innerHTML = Boolean ( x > y );
+		document.getElementById("boolean2").innerHTML = Boolean ( y > x );
+		document.getElementById("stringconc").innerHTML = a + b
+		document.getElementById("HW").innerHTML = text;
+		document.getElementById("RS").innerHTML = rectangleArea (7, 5);
+		document.getElementById("TS").innerHTML = triangleArea (5, 6);
+		document.getElementById("CS").innerHTML = circleArea (7);
+
+
+
+		</script>
+	</body>
+</html>
